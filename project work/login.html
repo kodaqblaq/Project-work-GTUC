@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+        background-image:  url(login.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="mini-logo.jpg" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+<div class="hero">
+<h1 class="header">Welcome to EKY Delivery Services</h1>
+    <div class="container">
+        <h2>Login</h2>
+
+        <form  method="POST">
+
+            <div class="form-group">
+                <label for="forom-data" class="sr-only">username</label>
+                      <i class="fas fa-user"></i>
+                <input type="text" name="username" placeholder="username" class="form-data" required>
+
+            </div>
+            <div class="form-group">
+                <label for="forom-data" class="sr-only">password</label>
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" placeholder="password" class="form-data" pattern="[a-zA-Z0-9!@#$%^*_]{6,25}" required>
+
+            </div>
+            <div class="form-group">
+                <input type="submit" name="login" value="login" class="btn btn-lg btn-warning ">
+
+            </div>
+        </form>
+<footer class="to_login">
+    <p>new here? please <a href="index (3).html">Signup</a></p>
+</footer>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+@import url(index.css);
+
+.header {
+  text-decoration: none;
+  color: whitesmoke;
+  text-align: center;
+  position: -webkit-sticky;
+  position: relative;
+  top: 0;
+  opacity: 10;
+}
+.container {
+  margin-top: 20%;
+  text-align: center;
+  background-color: lightgray;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  color: cornsilk;
+  margin-bottom: 10ch;
+}
+.form-group {
+  padding-top: 20px;
+}
+.form-data {
+  width: 30%;
+  height: 5.5ch;
+  border-radius: 10px;
+  border: none;
+  background: whitesmoke;
+  outline: none;
+  color: black;
+  padding-left: 2ch;
+  font-family: monospace, "Lucida Sans", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+}
+.form-data::placeholder {
+  font-size: 20px;
+  padding-left: 2ch;
+}
+#license {
+  text-transform: uppercase;
+}
+.submit {
+  padding: 20px;
+  border: none;
+  background: none;
+}
+h3 {
+  background-color: black;
+}
+/* mobile responsive */
+
+@media (max-width: 620px) {
+  .form-data {
+    width: 50%;
+  }
+}
+@media (max-width: 380px) {
+  .form-data {
+    width: 50%;
+  }
+}
+@media (max-width: 280px) {
+  .form-data {
+    width: 50%;
+  }
+}

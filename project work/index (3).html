@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Delivery Services</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap-responsive.css">
+        <link rel="stylesheet" href="index.css">
+       
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="shortcut icon" type="image/x-icon" href="mini-logo.jpg" />
+
+            <style>
+                body{
+                    background-image: url(12.jpg);;
+                     background-repeat: no-repeat;
+                     background-position: center;
+                     background-size: cover;
+                     overflow-x: hidden;
+                     position: relative;
+                }
+            </style>
+    </head>
+    <body>
+        <div class="hero">
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <img src="logo.png">
+            </div>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-close" onclick="closeMenu()"></i>
+                <ul>
+                    <li class="active"><a href="#">HOME</a></li>
+                    <a href="#"><li>ABOUT US</li></a>
+                    <a href="#"><li>CONTACT US</li></a>
+                </ul>
+                <button type="button" class="btn btn-warning"><a href="login.html"> LOGIN</a></button>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </div>
+        <div class="banner-title">
+            <h1>TAKING<span> EKY DELIVERY<br>SERVICES TO THE</span> ULTIMATE LEVEL</h1>
+        </div>
+        <div class="buttons">
+            <a href="signupclient.html" class="btn2"><span></span>SIGN UP AS CLIENT</a>
+            <a href="signupworker.html" class="btn2"><span></span>SIGN UP AS WORKER</a>
+        </div>
+        <div class="vertical-bar">
+            <div class="search-icon">
+                <i class="fa fa-th-list"></i>
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="social-icons">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="notifications">
+            <div class="contents"></div>
+            <div class="notifications-img"></div>
+        </div>
+        </div>
+        <script>
+                var show = document.getElementById("nav-links")
+                function showMenu(){
+                    show.style.right = "0";
+                }
+                function closeMenu(){
+                    show.style.right = "-200px";
+            }
+        </script>
+        <script src="signup.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+   
+        <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+        <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+
+        <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+        <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+
+        <!-- Add Firebase products that you want to use -->
+        <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-firestore.js"></script>
+
+
+
+        
+        < !--The core Firebase JS SDK is always required and must be listed first-- >
+
+
+            <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+           // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+           var firebaseConfig = {
+               apiKey: "AIzaSyBZMtqsC3W_sMKYqqbYh5KXR5N2tFceS_w",
+           authDomain: "authentification-e2d8e.firebaseapp.com",
+           projectId: "authentification-e2d8e",
+           storageBucket: "authentification-e2d8e.appspot.com",
+           messagingSenderId: "17063261066",
+           appId: "1:17063261066:web:775c07873a55be59b14e73",
+           measurementId: "G-700CCF0B9W"
+  };
+           // Initialize Firebase
+           firebase.initializeApp(firebaseConfig);
+           firebase.analytics();
+</script>
+  
+        
+   
+    </body>
+</html>

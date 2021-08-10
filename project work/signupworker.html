@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+    body{
+    background-image:url(girl.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+</style>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+        <script src="signup.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="mini-logo.jpg" />   
+<script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="hero">
+        <h1 class="header">Welcome to EKY Delivery Services</h1>
+<div class="container">
+    <h2>signup as a worker</h2>
+    <form action="" method="POST" id="form" onsubmit="formValidaton()">
+
+        <div class="form-group">
+            <label for="form-data" class="sr-only">username</label>
+            <i class="fas fa-user"></i>
+            <input type="text" name="username" placeholder="username" class="form-data" id="username" required>
+
+        </div>
+        <div class="form-group">
+            <label for="form-data" class="sr-only">email</label>
+            <i class="fas fa-envelope"></i>
+            <input type="email" name="email" placeholder="e-mail" class="form-data" required>
+
+        </div>
+        <div class="form-group">
+            <label for="form-data" class="sr-only">Date of birth</label>
+            <i class="fas fa-calendar"></i>
+            <input type="date" name="date" class="form-data" value="" required>
+
+        </div>
+        <div class="form-group">
+            <label for="form-data" class="sr-only">vehicle</label>
+            <i class="fas fa-truck"></i>
+           <select name="vehicle" id="vehicle" class="form-data">
+               <option value="car" selected><em>car</em></option>
+               <option value="truck"><em>truck</em></option>
+               <option value="motocycle"><em>motocycle</em></option>
+               <option value="van" ><em>van</em></option>
+           </select>
+
+        </div>
+
+        <div class="form-group">
+            <label for="forom-data" class="sr-only">licenseplate</label>
+            <i class="fas fa-hashtag"></i>
+            <input type="text" name="licenseplate" placeholder="GH-1234-21" id="license" class="form-data" maxlength="10" required>
+
+        </div>
+        <div class="form-group">
+            <label for="forom-data" class="sr-only">tel</label>
+            <i class="fas fa-phone"></i>
+            <input type="tel" name="tel" placeholder="phone" class="form-data"  maxlength="13" required value="+233">
+
+        </div>
+        <div class="form-group">
+            <label for="forom-data" class="sr-only">password</label>
+            <i class="fas fa-lock"></i>
+            <input type="password" name="password" placeholder="password" class="form-data" maxlength="20" required>
+
+        </div>
+        <div class="form-group">
+            <input type="submit" name="login" value="signup" class="btn btn-lg btn-warning ">
+
+        </div>
+    <footer class="to_login">
+        <p>if you already have an account please <a href="login.html">Login</a></p>
+    </footer>                   
+    </div>
+</div>
+<script>
+  
+</script>
+</body>
+</html>
